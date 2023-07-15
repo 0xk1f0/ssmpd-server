@@ -1,7 +1,5 @@
 # ssmpd-server
 
-***S*+*napcast***S*+*potify***MPD***-server
-
 ***S***napcast***S***potify***MPD***
 
 This is project aims to unify:
