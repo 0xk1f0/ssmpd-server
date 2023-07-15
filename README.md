@@ -34,6 +34,6 @@ use Snapcast.
 ## Checklist
 
 - [x] Server Docker Container with all needed integrations
-- [] Generic API Interface that can control all involved services (some Python Flask combo)
-- [] Web Frontend (probably Astro.js)
-- [] Desktop/Mobile App (probably either Tauri or React Native if i feel like it)
+- [ ] Generic API Interface that can control all involved services (some Python Flask combo)
+- [ ] Web Frontend (probably Astro.js)
+- [ ] Desktop/Mobile App (probably either Tauri or React Native if i feel like it)
