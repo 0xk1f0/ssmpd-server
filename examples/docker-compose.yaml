@@ -1,0 +1,12 @@
+version: "3"
+services:
+  snapcast:
+    image: ghcr.io/0xk1f0/ssmpd-server:master
+    restart: unless-stopped
+    network_mode: "host"
+    volumes:
+      - /path/to/music:/var/lib/mpd/music
+      - /path/to/playlists:/var/lib/mpd/playlists
+      - /path/to/database:/var/lib/mpd/database
+    environment:
+      - ENDPOINTS=3

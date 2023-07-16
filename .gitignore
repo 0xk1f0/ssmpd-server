@@ -1,2 +1,9 @@
 # compose data folder
 data/
+
+# Visual Studio Code
+.vscode/
+
+# Python
+env/
+__pycache__/
