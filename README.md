@@ -1,5 +1,7 @@
 # ssmpd-server
 
+[![Docker](https://github.com/0xk1f0/ssmpd-server/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/0xk1f0/ssmpd-server/actions/workflows/docker-publish.yml)
+
 ***S***napcast***S***potify***MPD***
 
 This is project aims to unify:
@@ -28,6 +30,29 @@ with other stuff that I don't really need.
 Local Music and Internet Radio playback can be done with MPD, while Spotify 
 Connect one can be implemented with Librespot. To unify these two we can 
 use Snapcast.
+
+## How to run
+
+Docker Images are automatically built, get the image from this repo's container
+registry using:
+
+```bash
+docker pull ghcr.io/0xk1f0/ssmpd-server:master
+```
+
+There is an example docker-compose file located in this repo also, should be self
+explanatory if you've done some docker stuff before. You can control the whole thing
+like this:
+
+```bash
+# start
+docker-compose up -d
+# stop
+docker-compose down
+```
+
+Make sure to check out the list below to get a general idea of what is implemented
+yet and what isn't.
 
 ## Checklist
 
