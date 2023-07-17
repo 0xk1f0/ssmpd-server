@@ -5,7 +5,7 @@ FROM alpine:edge
 #RUN apt update && \
 #    apt install -y wget
 RUN apk update && \
-    apk add bash
+    apk add bash python3 py3-pip
 
 # change workdir
 WORKDIR /app
@@ -25,8 +25,12 @@ RUN apk add snapcast-server
 #RUN apt install -y mpd
 RUN apk add mpd
 
-# copy setup script
-COPY src/entrypoint.sh .
+# copy setup script and deps
+COPY ${PWD}/src .
+COPY ${PWD}/requirements.txt .
+
+# setup python
+RUN pip install -r requirements.txt
 
 # ports
 EXPOSE 1705

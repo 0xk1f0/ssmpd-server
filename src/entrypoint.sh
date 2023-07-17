@@ -99,4 +99,9 @@ done
 
 # start snapserver
 log_notify_user "Starting Snapcast Server.."
-snapserver
+snapserver &
+disown
+
+# start API endpoint
+log_notify_user "Starting API Endpoint.."
+/usr/bin/python main.py
